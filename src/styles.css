@@ -1,0 +1,54 @@
+.app {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+}
+.diamond {
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  padding: 20px;
+  background-color: pink;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  transform: rotate(45deg);
+}
+
+.rotate-right {
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  padding: 20px;
+  background-color: pink;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  transform: rotate(45deg);
+  animation: infinite-spinning-clockwise 5s linear infinite; /* IE 10+, Fx 29+ */
+}
+
+.rotate-left {
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  padding: 20px;
+  background-color: pink;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  transform: rotate(45deg);
+  animation: infinite-spinning-counter 5s linear infinite; /* IE 10+, Fx 29+ */
+}
+
+@keyframes infinite-spinning-clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes infinite-spinning-counter {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
