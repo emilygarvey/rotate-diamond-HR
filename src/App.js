@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles.css";
 
 /*
-1. Replace the color variable with a "state variable" that is named className.
+1. Replace the className variable with a "state variable" that is named className.
 2. Update state inside the function handleClick so the className of the diamond
 toggles between 'rotate-right' and 'rotate-left'. On first click, the diamond
 should rotate to the right.
